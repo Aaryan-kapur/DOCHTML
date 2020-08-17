@@ -23,7 +23,7 @@ Lecture - 50</span></b></p>
 
 <p class=MsoNormal align=center style='margin-bottom:0in;text-align:center;
 line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
-color:black'>JDBC � I</span></b></p>
+color:black'>JDBC - I</span></b></p>
 
 <p class=MsoNormal align=center style='margin-bottom:0in;text-align:center;
 line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
@@ -34,21 +34,21 @@ color:black'>&nbsp;</span></b></p>
 style='font-size:12.0pt;line-height:150%;font-family:"Times New Roman",serif'>Now,
 we shall start learning about JDBC. The full form of the JDBC is <b>Java Database
 Connectivity</b> and these concepts will be covered in 6 sessions including
-today. So �far as the JDBC is concerned, �there are three things to be learnt. First
+today. So ,far as the JDBC is concerned, ,there are three things to be learnt. First
 of all the database management system and then how the database management
 system can be connected. And, this itself is called the JDBC driver and then finally,
-the java application basically �helps a programmer to connect a database from
+the java application basically ,helps a programmer to connect a database from
 the application as an endpoint. </span></p>
 
 <p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
 12.0pt;margin-left:0in;text-align:justify;line-height:150%;text-autospace:none'><span
 style='font-size:12.0pt;line-height:150%;font-family:"Times New Roman",serif'>So,
-three things are there. As regards the �database management system, �there are
+three things are there. As regards the ,database management system, ,there are
 many tools and many packages. In this course, we will cover one system which
-basically helps a programmer to maintain a database which �is called the <b>MySQL.</b>
-So, we will now �discuss the MySQL. MySQL is a database management system and now
-we will discuss� how this �MySQL can be installed. If you are new to this MySQL,
-�then all this information is highly essential for your learning. So, I do not
+basically helps a programmer to maintain a database which ,is called the <b>MySQL.</b>
+So, we will now ,discuss the MySQL. MySQL is a database management system and now
+we will discuss, how this ,MySQL can be installed. If you are new to this MySQL,
+,then all this information is highly essential for your learning. So, I do not
 know exactly whether you are familiar with SQL or MySQL or any rather relational
 database management system.</span></p>
 
@@ -59,10 +59,10 @@ so, considering that you do not have any background knowledge about the
 database management system handling, I will take a quick tour of the SQL based database
 management system which is a very popular one and called MySQL. So, in this session,
 we will try to learn about how the MySQL can be installed. And then finally, we
-will see exactly using this MySQL if once installed �in your machine
-successfully, �then how we can manage the database management system related to
+will see exactly using this MySQL if once installed ,in your machine
+successfully, ,then how we can manage the database management system related to
 a task. We will also learn how we can create a database, how we can create a
-table under a database and then how we �can accomplish different operations to
+table under a database and then how we ,can accomplish different operations to
 the database.</span></p>
 
 <p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
@@ -73,27 +73,30 @@ font-family:"Times New Roman",serif'>(Refer Slide Time: 02:40)</span></p>
 <p class=MsoNormal align=center style='margin-top:12.0pt;margin-right:0in;
 margin-bottom:12.0pt;margin-left:0in;text-align:center;line-height:150%;
 text-autospace:none'><span style='font-size:12.0pt;line-height:150%;font-family:
-"Times New Roman",serif'><img width=384 height=288
-src="lec50%20Programming%20in%20Java%20corrected_files/image001.jpg"></span></p>
+"Times New Roman",serif'><div class="se-component se-image-container __se__float-center" contenteditable="false">
+        <figure style="margin: auto;">
+            <img src="https://github.com/Aaryan-kapur/DOCHTML/blob/master/COMPUTER%20SCIENCE%20AND%20ENGINEERING/lec50%20Programming%20in%20Java%20corrected_files/image001.png?raw=true" alt="" data-rotate="" data-proportion="true" data-rotatex="" data-rotatey="" data-align="center" data-size="," data-percentage="auto,auto" data-file-name="image012.png?raw=true" data-file-size="0" origin-size="384,288" data-origin="," style="" data-index="12">
+                      </figure>
+      </div></span></p>
 
 <p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
 12.0pt;margin-left:0in;text-align:justify;line-height:150%;text-autospace:none'><span
 style='font-size:12.0pt;line-height:150%;font-family:"Times New Roman",serif'>Now
-so, first what exactly is �MySQL? �It is a �very popular software. �Usually �you
-know that �the database management system provides� for handling one language
-only and the �standard language �is called the <b>Structured Query Language</b>.
-We usually call this language as a fourth-generation language and �if speak
-about �C, C++, Java, they are the third generation language. �SQL� follows a certain
-syntax that is why it is sometimes� called the language but truly SQL is not a
+so, first what exactly is ,MySQL? ,It is a ,very popular software. ,Usually ,you
+know that ,the database management system provides, for handling one language
+only and the ,standard language ,is called the <b>Structured Query Language</b>.
+We usually call this language as a fourth-generation language and ,if speak
+about ,C, C++, Java, they are the third generation language. ,SQL, follows a certain
+syntax that is why it is sometimes, called the language but truly SQL is not a
 language like Java, C, C++.</span></p>
 
 <p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
 12.0pt;margin-left:0in;text-align:justify;line-height:150%;text-autospace:none'><span
 style='font-size:12.0pt;line-height:150%;font-family:"Times New Roman",serif'>Anyway,
-SQL programming whatever it is there, �we can do it in English like syntax
+SQL programming whatever it is there, ,we can do it in English like syntax
 actually. And it is basically a de-facto standard now-a-days. Every database
-management system engineer prefers the SQL based system. There �are many types
-of database management systems as relational database management system and �object-oriented
+management system engineer prefers the SQL based system. There ,are many types
+of database management systems as relational database management system and ,object-oriented
 database management systems. SQL is in fact, a relational database management
-system. Now, we will discuss a few things and �few salient points about the
+system. Now, we will discuss a few things and ,few salient points about the
 relational database management system,</span></p>
